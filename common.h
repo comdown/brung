@@ -1,5 +1,5 @@
-#ifndef br_common
-#define br_common
+#ifndef brung_common_h
+#define brung_common_h
 
 #include <stdbool.h>
 #include <stddef.h>
