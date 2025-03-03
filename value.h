@@ -4,4 +4,16 @@
 #include "common.h"
 typedef double Value;
 
-#endif // !brung_value_h
+typedef struct
+{
+	int capacity;
+	int count;
+	Value* values;
+} ValueArray;
+
+void initValueArray(ValueArray* array);
+void writeValueArray(ValueArray* array, const Value value);
+void freeValueArray(ValueArray* array);
+void printValue(const Value value);
+
+#endif
