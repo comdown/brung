@@ -1,5 +1,10 @@
 #ifndef brung_vm_h
 #define brung_vm_h
+
+#ifdef __cplusplus
+extern "C" {
+#endif // __cplusplus
+
 #include "chunk.h"
 #include "value.h"
 
@@ -27,4 +32,8 @@ InterpretResult interpret(Chunk* chunk);
 void push(Value value);
 Value pop();
 
-#endif
+#ifdef __cplusplus
+}
+#endif // __cplusplus
+
+#endif // brung_vm_h

@@ -1,6 +1,10 @@
 #ifndef brung_chunk_h
 #define brung_chunk_h
 
+#ifdef __cplusplus
+extern "C" {
+#endif // __cplusplus
+
 #include "common.h"
 #include "value.h"
 
@@ -38,4 +42,8 @@ Value getConstantFromConstantIndex(const Chunk* chunk, const uint8_t constantInd
 void freeChunk(Chunk* chunk);
 int getLine(const Chunk* chunk, const int offset);
 
-#endif
+#ifdef __cplusplus
+}
+#endif // __cplusplus
+
+#endif // brung_chunk_h
