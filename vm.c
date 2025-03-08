@@ -97,5 +97,10 @@ Value pop()
 	return *vm.stackTop;
 }
 
+bool isStackEmpty()
+{
+	return vm.stackTop == vm.stack;
+}
+
 
 

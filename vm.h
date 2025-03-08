@@ -31,6 +31,7 @@ InterpretResult interpret(Chunk* chunk);
 
 void push(Value value);
 Value pop();
+bool isStackEmpty();
 
 #ifdef __cplusplus
 }
